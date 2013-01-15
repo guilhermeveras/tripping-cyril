@@ -1,0 +1,17 @@
+build
+tmp
+*~
+cache/*
+.svn*
+app/logs/*
+app/cache/*
+.buildpath
+.project
+.settings/
+assets
+vendor/*
+app/config/parameters.ini
+web/js/combined*
+*.swp
+web/bundles/*
+.~lock*
