@@ -15,3 +15,4 @@ web/js/combined*
 *.swp
 web/bundles/*
 .~lock*
+/nbproject/private/

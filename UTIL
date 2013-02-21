@@ -1,0 +1,25 @@
+============
+COMANDOS ÚTEIS PARA O PROJETO
+============
+
+GERAR CRUD AUTOMATICAMENTE SEM CONFIRMACAO (APAGAR CONTROLER ANTES)
+===================================================================
+/Applications/MAMP/bin/php/php5.4.4/bin/php app/console -n doctrine:generate:crud --entity=AtonboxContatoBundle:Contato --route-prefix=contato --with-write --format=yml
+
+
+
+
+
+Processo:
+
+ - Definir tabela contato
+ - Data Load
+ - Timestamp created_at, update_at
+ - Deleted_at
+ - Group_id
+ - Numero_sequencial
+ - Criado por apagado por 
+ - Doctrine Paginação + Basic Search
+ - Tema?
+ - Bootstrap Bundle
+ - 

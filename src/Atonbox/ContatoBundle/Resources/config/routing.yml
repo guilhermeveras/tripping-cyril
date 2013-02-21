@@ -1,0 +1,7 @@
+atonbox_contato_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AtonboxContatoBundle:Default:index }
+
+AtonboxContatoBundle_contato:
+    resource: "@AtonboxContatoBundle/Resources/config/routing/contato.yml"
+    prefix:   /contato

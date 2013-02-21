@@ -1,0 +1,30 @@
+contato:
+    pattern:  /
+    defaults: { _controller: "AtonboxContatoBundle:Contato:index" }
+
+contato_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AtonboxContatoBundle:Contato:show" }
+
+contato_new:
+    pattern:  /new
+    defaults: { _controller: "AtonboxContatoBundle:Contato:new" }
+
+contato_create:
+    pattern:  /create
+    defaults: { _controller: "AtonboxContatoBundle:Contato:create" }
+    requirements: { _method: post }
+
+contato_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AtonboxContatoBundle:Contato:edit" }
+
+contato_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AtonboxContatoBundle:Contato:update" }
+    requirements: { _method: post }
+
+contato_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AtonboxContatoBundle:Contato:delete" }
+    requirements: { _method: post }

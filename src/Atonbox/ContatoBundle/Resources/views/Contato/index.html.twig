@@ -1,0 +1,39 @@
+<h1>Contato list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Num_seq</th>
+            <th>Nome</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('contato_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.numseq }}</td>
+            <td>{{ entity.nome }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('contato_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('contato_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('contato_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>
