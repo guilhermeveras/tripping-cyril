@@ -3,12 +3,14 @@
 namespace Atonbox\ContatoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Contato
  *
  * @ORM\Table()
  * @ORM\Entity
+ * @Gedmo\SoftDeleteable(fieldName="deleted")
  */
 class Contato
 {
@@ -36,6 +38,31 @@ class Contato
     private $nome;
 
 
+    /**
+     * @var date $created
+     *
+     * @ORM\Column(name="created", type="datetime")
+     * @Gedmo\Timestampable(on="create")
+     */
+    private $created;
+    
+    
+    /**
+     * @var datetime $updated
+     *
+     * @ORM\Column(name="updated", type="datetime")
+     * @Gedmo\Timestampable(on="update")
+     */
+    private $updated;
+    
+    /**
+     * @var datetime $deleted
+     *
+     * @ORM\Column(name="deleted", type="datetime", nullable=true)
+     */
+    private $deleted;
+
+    
     /**
      * Get id
      *

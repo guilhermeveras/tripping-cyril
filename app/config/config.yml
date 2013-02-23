@@ -50,7 +50,15 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
-
+# Adicionando informacoes para que o mapeamento use o Bundle
+        mappings:
+            StofDoctrineExtensionsBundle: ~
+# Adicionando o filtro para o soft delete            
+        filters:
+            softdeleteable:
+               class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+               enabled: true
+            
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"
@@ -58,3 +66,11 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Adicionando configurações especificas para o Bundle StofDoctrineExtensionsBundle
+stof_doctrine_extensions:
+    default_locale: en_US
+    orm:
+        default:
+            timestampable: true
+            softdeleteable: true

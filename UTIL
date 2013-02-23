@@ -11,15 +11,15 @@ GERAR CRUD AUTOMATICAMENTE SEM CONFIRMACAO (APAGAR CONTROLER ANTES)
 
 
 Processo:
-
- - Definir tabela contato
- - Data Load
- - Timestamp created_at, update_at
- - Deleted_at
+OK - Criando o seu primeiro CRUD com SYMFONY 2
+OK - Realizando a carga de dados inicial com Data Load
+OK - Ativando comportamentos Timestamp created_at, update_at Instalando DoctrineExtensions and Stof
+OK - Habilitando o Deleted_at 
  - Group_id
  - Numero_sequencial
  - Criado por apagado por 
  - Doctrine Paginação + Basic Search
  - Tema?
  - Bootstrap Bundle
- - 
+ - Log de todas as alteracoes
+ - bacth softdelete limpando o banco de dados
